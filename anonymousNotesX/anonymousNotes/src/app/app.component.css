@@ -1,5 +1,5 @@
 .container {
-    background-color: #DDDDDD;
+    background-color: rgb(253, 253, 253);
 }
 
 #showNotes {
@@ -9,7 +9,17 @@
 }
 
 .eachNote {
-    border: solid 1px black;
+    /* border: solid 3px rgb(216, 253, 3);
+    border-radius: 2px; */
     padding: 5px;
     margin: 5px;
+}
+
+#submit {
+    margin-left: 5px;
+}
+
+h1 {
+    background-color: #4267B2;
+    padding: 8px;
 }

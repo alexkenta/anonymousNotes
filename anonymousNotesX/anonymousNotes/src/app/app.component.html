@@ -1,20 +1,21 @@
 <div class="container">
-  <h1>Anonymous Notes</h1>
+  <h1 style="font-family: 'Righteous', cursive;">Anonymous Notes</h1>
+  <hr>
   <form #thisForm='ngForm' name="newNote" (submit)="onFormSubmit()">
-    <label for="note">Note: </label>
-    <input type="text" name="note"
+    <input type="text" name="note" style="width: 400px;"
     required
     minlength="3"
     [(ngModel)]="allNotes.note"
     #note="ngModel">
   
-    <input class="btn-primary" type="submit" value="Add Note">
+    <input class="btn-primary" id="submit" type="submit" value="Add Note">
   </form>
   <div id="showNotes">
     <!-- div for all notes -->
     <div class="eachNote" *ngFor='let note of notes'>
-      <p>{{note.note}}</p>
+      <p style="font-weight: bold;">{{note.note}}</p>
       <p>{{note.createdAt | date: "medium"}}</p>
+      <hr>
     </div>
   </div>
 </div>
